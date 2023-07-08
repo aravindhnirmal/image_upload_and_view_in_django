@@ -1,2 +1,2 @@
 # image_upload_and_view_in_django
-ccreate_a_image_uploader_and_view_in_django
+create_a_image_uploader_and_view_in_django
