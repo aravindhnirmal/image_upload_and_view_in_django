@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show Images</title>
+</head>
+<body>
+    <style>
+    
+        img{
+            height: 300px;
+            width: 300px;
+        }
+        </style>
+    <h1>Hotel Images</h1>
+    {% for image in images %}
+        <div class="f">
+            <h3>{{ image.name }}</h3>
+            <img src="{{ image.hotel_Main_Img.url }}" alt="{{ image.name }}">
+        </div>
+    {% empty %}
+        <p>No images found.</p>
+    {% endfor %}
+</body>
+</html>
